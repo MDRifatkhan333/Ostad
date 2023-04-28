@@ -1,18 +1,12 @@
 void main() {
-  List<String> phoneNumber = [
-    '+88',
-    '01768131685',
-    '01768171985',
-    '01768111286',
-    '01768131685'
-  ];
+  List<String> phoneNumber = ['+88', '1', '2', '3', '4'];
 
-  phoneNumber.removeAt(0);
-  List<String> bdPPhoneNumber =
-      phoneNumber.map((element) => '+88$element').toList();
+  List bdPPhoneNumber =
+      phoneNumber.map((element) => '${phoneNumber[0]}$element').toList();
+  bdPPhoneNumber.removeAt(0);
+
   print(bdPPhoneNumber);
   // for (int i = 1; i < phoneNumber.length; i++) {
-  //   // print('+88${phoneNumber[i]}');
+  //   //print('+88${phoneNumber[i]}');
   //   print('${phoneNumber[0]}${phoneNumber[i]}');
-  // }
 }
