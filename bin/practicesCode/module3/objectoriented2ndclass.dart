@@ -1,4 +1,5 @@
 void main() {
+  // here rifat is object of Human class
   Human Rifat = Human();
   Rifat.name = 'Rifat';
   Rifat.age = 20;
@@ -12,13 +13,18 @@ void main() {
   print(Human());
 }
 
+// here Human is a class
 class Human {
   late String name;
   late int age;
   late String color;
   late int height;
-  // global variable
+  // global variable ta static kore dite hobe
+  // static variable ta class er modde declare kore dite hobe
   static int numberOfEye = 2;
+  // static variable ta object er modde declare kora jay na
+  // static variable ta object er modde call kora jay na
+  // static variable ta class er modde call kora jay
 
   Human() {
     print('This is constructor');
