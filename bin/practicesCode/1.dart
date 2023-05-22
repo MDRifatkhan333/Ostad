@@ -1,13 +1,51 @@
-import 'dart:math';
+// // class Shape {
+// //   void draw() {
+// //     print("Drawing shape...");
+// //   }
+// // }
+
+// // class Circle extends Shape {
+// //   @override
+// //   void draw() {
+// //     print("Drawing circle...");
+// //   }
+// // }
+
+// // void main() {
+// //   Circle myCircle = Circle();
+// //   myCircle.draw();
+// // }
+// class Animal {
+//   void eat() {
+//     print("Animal eating...");
+//   }
+// }
+
+// class Lion extends Animal {
+//   @override
+//   void eat() {
+//     super.eat();
+//     print("Lion eating meat...");
+//   }
+// }
+
+// void main() {
+//   Lion myLion = Lion();
+//   myLion.eat();
+// }
+
+abstract class Animal {
+  void makeSound();
+}
+
+class Dog extends Animal {
+  @override
+  void makeSound() {
+    print("Dog barking...");
+  }
+}
 
 void main() {
-  List a = [
-    1,
-    2,
-    3,
-  ];
-
-  for (int i = 0; i < a.length; i++) {
-    print(pow(a[i], 3));
-  }
+  Animal myAnimal = Dog();
+  myAnimal.makeSound();
 }
